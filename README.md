@@ -1,9 +1,9 @@
-# Sky Messenger
+# Sky Express
 
 
 I've decided to go ahead and spare some time in creating an application that will be able to view you emails. This application will be built using Electron.JS.
 
-Sky Messenger will be a cross-platform service that will allow you to view all of your emails in one location. It will be light-weight, and be compatable with many common emails. The app will also come with a built-in calendar for reminders and to store possible events. As I further development of this application, I will add documentation. 
+Sky Express will be a cross-platform service that will allow you to view all of your emails in one location. It will be light-weight, and be compatable with many common emails. The app will also come with a built-in calendar for reminders and to store possible events. As I further development of this application, I will add documentation. 
 
 
 
