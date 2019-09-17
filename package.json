@@ -1,0 +1,22 @@
+{
+  "name": "sky-mailviewer",
+  "version": "0.0.0",
+  "description": "An application that will be able to view your emails.",
+  "main": "main.js",
+  "scripts": {
+    "test": "start"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/RobertSchalk/Sky-MailViewer.git"
+  },
+  "keywords": [
+    "email"
+  ],
+  "author": "Robert Schalk",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/RobertSchalk/Sky-MailViewer/issues"
+  },
+  "homepage": "https://github.com/RobertSchalk/Sky-MailViewer#readme"
+}
