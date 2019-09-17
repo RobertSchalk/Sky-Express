@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Sky MailView</title>
+        <link rel="stylesheet" href="../style/css/index.css"/>
+    </head>
+    <body>
+            <h1>This is just a quick form to test the basic node mailer. </h1>
+            <p>Currently configured to work with outlook only.</p>
+            <p>May also be ported into the SkyNet browser.</p>
+            <form>
+                <input type="text" id="user" title="Enter your User/email address."/>
+                <input type="password" id="password" title="Enter your password for your service."/>
+                
+                <input type="button" id="login" value="Login">
+                <input type="text" id="from" title="Enter the from email."/>
+                <input type="text" id="to" title="Enter the email address you wish to send to."/>
+                <input type="text" id="subject" title="Enter the subject of your email."/>
+                <textarea id="text"></textarea>
+                <input type="button" id="send" value="Send">
+            </form>
+            <script>
+            require('./scripts/index.js')
+            </script>
+    </body>
+</html>
