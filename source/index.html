@@ -5,9 +5,118 @@
         <link rel="stylesheet" href="../style/css/index.css"/>
     </head>
     <body>
-            <h1>This is just a quick form to test the basic node mailer. </h1>
-            <p>Currently configured to work with outlook only.</p>
-            <p>May also be ported into the SkyNet browser.</p>
+           
+           <div id="sideMenu" data-state="closed" title="Open/Close Menu">
+            <div id="menuToggleButton">
+                    <span class="icon"></span>
+                    <span class="icon"></span>
+                    <span class="icon"></span>    
+            </div>
+            <div id="addAccount" class="menuButton">Add Email</div>
+            <div id="addAccount" class="menuButton">Configure Email</div>
+            <div id="addAccount" class="menuButton">Remove Email</div>
+           </div>
+
+           
+           <div id="fileView">
+               <h1 class="smallViewTitle">folder view</h1>
+               <h1 class="smallViewTitle">robert.h.schalk@outlook.com</h1>
+            <li>Email folder</li>
+            <li>Email folder</li>
+            <li>Email folder</li>
+            <li>Email folder</li>
+            <li>Email folder</li>
+            <li>Email folder</li>
+            <li>Email folder</li>
+            <li>Email folder</li>
+            <li>Email folder</li>
+            <li>Email folder</li>
+            <li>Email folder</li>
+            <li>Email folder</li>
+            <li>Email folder</li>
+            <li>Email folder</li>
+            <li>Email folder</li>
+            <li>Email folder</li>
+            <li>Email folder</li>
+            <li>Email folder</li>
+            <li>Email folder</li>
+            <li>Email folder</li>
+            <li>Email folder</li>
+            <li>Email folder</li>
+            <li>Email folder</li>
+            <li>Email folder</li>
+            <li>Email folder</li>
+            <li>Email folder</li>
+           </div>
+
+           <div id="Sky-Spot">
+
+           </div>
+
+           <div id="Sky-Express-List">
+                <h1 class="smallViewTitle">Emails</h1>
+
+               <div class="email" title="Email information">
+                   <div class="deleteEmailButton" title="delete email">
+                    <span class="top"></span>
+                    <span class="top"></span>
+                    <span class="icon"></span>
+                    <span class="icon"></span>
+                   </div>
+                   <div class="emailFrom">
+                    Microsoft
+                   </div>
+                   
+                   <div class="emailDate">
+                    10/19
+                   </div>
+                   <div class="emailSubjectPreview">
+                        Subject This is going to be a very long subject.
+                   </div>
+               </div>
+               <div class="email">
+                    <div class="deleteEmailButton" title="delete email">
+                     <span class="top"></span>
+                     <span class="top"></span>
+                     <span class="icon"></span>
+                     <span class="icon"></span>
+                    </div>
+                   <div class="emailFrom">
+                    Jack Nicholson
+                   </div>
+                   <div class="emailDate">
+                    10/19
+                   </div>
+                   <div class="emailSubjectPreview">
+                    This better ellipsis.
+                   </div>
+               </div>
+               <div class="email">
+                    <div class="deleteEmailButton" title="delete email">
+                     <span class="top"></span>
+                     <span class="top"></span>
+                     <span class="icon"></span>
+                     <span class="icon"></span>
+                    </div>
+                   <div class="emailFrom">
+                    Robert Schalk
+                   </div>
+                   <div class="emailDate">
+                    10/19
+                   </div>
+                   <div class="emailSubjectPreview">
+                    This is a test.
+                   </div>
+               </div>
+           </div>
+
+           <div id="Sky-Express-View">
+            <div id="Sky-Express-Tab">
+
+            </div>
+           </div>
+            
+            <!--
             <form>
                 <input type="text" id="user" title="Enter your User/email address."/>
                 <input type="password" id="password" title="Enter your password for your service."/>
@@ -18,7 +127,7 @@
                 <input type="text" id="subject" title="Enter the subject of your email."/>
                 <textarea id="text"></textarea>
                 <input type="button" id="send" value="Send">
-            </form>
+            </form>-->
             <script>
             require('./scripts/index.js')
             </script>

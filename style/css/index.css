@@ -1,0 +1,319 @@
+body{
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    font-family: monospace;
+}
+
+
+.smallViewTitle{
+    width: calc(100% - 4px);
+    height: 20px;
+    margin: 0;
+    padding: 2px;
+    font-size: 15px;
+    background-color: #000000aa;
+    color: #66dede;
+    text-shadow: 2px 2px 2px #000;
+    text-align: center;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    position: sticky;
+    top: 0;
+    left: 0;
+    transition: 0.3s;
+}
+#skyLine{
+    width: calc(100vw - 50px);
+    height: 75px;
+    border-bottom: 1px solid #000;
+    display: block;
+    position: relative;
+    float: right;
+    margin: 0;
+}
+
+#sideMenu{
+    width: 250px;
+    height: calc(100% - 50px);
+    padding-top: 50px;
+    border-right: 1px solid #000;
+    text-shadow: 1px 1px 2px #000;
+    color: #cecece;
+    display: block;
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    left: -200px;
+    background-color: rgba(0,0,0,0.9);
+    transition: 0.5s;
+    z-index: 5;
+}
+
+#sideMenu .menuButton{
+    width: calc(200px - 20px);
+    height: calc(50px - 4px);
+    padding: 0 10px;
+    background-color: rgba(0,0,0,0.4);
+    border-style: solid;
+    border-color: rgba(0,0,0,0.6);
+    border: 2px 0;
+    color: #cecece;
+    font-size: 18px;
+    font-weight: bolder;
+    line-height: calc(50px - 4px);
+    display: block;
+    position: relative;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    transition: 0.6s;
+    cursor: pointer;
+}
+#sideMenu .menuButton:hover{
+    width: 200px;
+    height: calc(50px - 4px);
+    background-color: rgba(100,100,100,0.4);
+    border-style: solid;
+    border-color: rgba(100,100,100,0.6);
+    border: 2px 0;
+    color: #cecece;
+    font-size: 18px;
+    font-weight: bolder;
+    display: block;
+    position: relative;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+}
+
+#menuToggleButton{
+    width: calc(50px - 2px);
+    height: calc(50px - 4px);
+    background-color: rgba(0,0,0,0.4);
+    border: 2px solid rgba(0,0,0,0.6); 
+    display: flexbox;
+    align-content: center; 
+    align-items: center;
+    position: absolute;
+    top: 0;
+    right: 0;
+    transition: 0.4s;
+    z-index: 5;
+    cursor: pointer;
+}
+#menuToggleButton:hover{
+    height: calc(50px - 4px);
+    background-color: rgba(100,100,100,0.4);
+    border-style: solid;
+    border-color: rgba(100,100,100,0.6);
+    transform: rotate(90deg);
+}
+
+#menuToggleButton > .icon{
+    width: 50%;
+    margin: 15px auto 0;
+    background-color: #cecece89;
+    height: 2px;
+    display: block;
+}
+#menuToggleButton > .icon + .icon{
+    margin-top: 5px;
+}
+
+#fileView{
+    width: calc(230px - 12px);
+    height: calc(50% - 2px);
+    border: 1px solid #000;
+    padding: 0;
+    overflow-y: auto;
+    position: relative;
+    top: 0;
+    left: 50px;
+    bottom: 0;
+    right: 0;
+
+}
+
+#fileView li{
+    margin: 1px 5px;
+}
+
+#fileView::-webkit-scrollbar{
+	background:#002;
+	outline:none;
+	border:none;
+    height:3px;
+
+}
+#fileView::-webkit-scrollbar-thumb{
+    background:#0aa;
+    border-radius: 3px;
+}
+
+#fileView::-webkit-scrollbar:hover, #fileView::-webkit-scrollbar-thumb{
+    border: 1px solid #000;
+    
+}
+
+#Sky-Spot{
+    width: calc(230px - 12px);
+    height: calc(50% - 2px);
+    border: 1px solid #000;
+    padding: 0;
+    overflow-y: auto;
+    position: relative;
+    top: 0;
+    left: 50px;
+    bottom: 0;
+    right: 0;
+}
+
+#Sky-Express-List{
+    width: calc(285px - 12px);
+    height: calc(100% - 2px);
+    border: 1px solid #000;
+    background-color: rgba(30,30,30,0.6);
+    padding: 0;
+    overflow-y: auto;
+    position: relative;
+    top: -100%;
+    left: 268px;
+    bottom: 0;
+    right: 0;
+    overflow-x: hidden;
+    text-overflow: ellipsis;
+}
+
+#Sky-Express-List .email{
+    width: calc(100% - 10px);
+    height: calc(60px - 10px);
+    border: 1px solid #000;
+    background-color: rgba(0,0,0,0.4);
+    padding: 5px 5px;
+    overflow-x: hidden;
+    text-overflow: ellipsis;
+    text-shadow: 1px 1px 2px #000;
+    color: #dedede;
+    position: relative;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+#Sky-Express-List .email:hover{
+    border: 1px solid #444;
+    background-color: rgba(100,100,100,0.7);
+    overflow-x: hidden;
+    text-overflow: ellipsis;
+    text-shadow: 1px 1px 2px #444;
+    color: #dedede;
+    position: relative;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+}
+
+.deleteEmailButton{
+    width: 9px;
+    height: 7px;
+    background-color: #333;
+    display: none;
+    position: absolute;
+    top: 5px;
+    left: calc(100% - 25%);
+    transition: 0.3s;
+    border: 1px solid #fff;
+    transform: rotate(90deg);
+    box-shadow: 1px 1px 2px #000;
+}
+.deleteEmailButton >.icon{
+    width: 50%;
+    margin: 2px auto 0;
+    background-color: #cecece89;
+    height: 1px;
+    display: block;
+}
+.deleteEmailButton > .icon + .icon{
+    margin-top: 1px;
+}
+.deleteEmailButton > .top{
+    width: 13px;
+    height: 2px;
+    background-color: #fff;
+    position: absolute;
+    border-radius: 1px;
+    top: 2.5px;
+    right: 4px; 
+    transform: rotate(90deg);
+    box-shadow: 1px 1px 2px #000;
+}
+.deleteEmailButton > .top + .top{
+    width: 3px;
+    height: 2px;
+    background-color: #fff;
+    border-radius: 2px;
+    top: 2.5px;
+    right: 11px; 
+    transform: rotate(90deg);
+    box-shadow: 2px 2px 2px #000;
+}
+
+#Sky-Express-List .email:hover .deleteEmailButton{
+    display: block;
+    cursor: pointer;
+}
+
+
+
+#Sky-Express-List .email .emailFrom{
+    width: 73%;
+    height: auto;
+    margin: 0;
+    padding: 1px 0;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-size: 16px;
+    font-weight: bolder;
+    display: block;
+    position: relative;
+    top:0;
+    left:0;
+    bottom:0;
+    right: 0;
+}
+#Sky-Express-List .email .emailDate{
+    width: 25%;
+    height: auto;
+    margin: 0;
+    padding: 1px 0;
+    font-size: 15px;
+    display: block;
+    position: absolute;
+    top: 25px;
+    left: calc(100% - 25%);
+    bottom:0;
+    right: 0;
+}
+#Sky-Express-List .email .emailSubjectPreview{
+    width: 73%;
+    height: 16px;
+    margin: 0;
+    padding: 1px 0;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-size: 15px;
+    display: block;
+    position: relative;
+    top:0;
+    left:0;
+    bottom:0;
+    right: 0;
+}
