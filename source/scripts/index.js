@@ -1,7 +1,8 @@
+import SkyExpressEncryption from '../../private/key';
 var nodemailer = require('nodemailer');
 
 //setting up basics.
-
+console.log(enc);
 var user = document.getElementById('user'),
     password = document.getElementById('password'),
     service = document.getElementById('service'),
@@ -10,9 +11,11 @@ var user = document.getElementById('user'),
     subject = document.getElementById('subject'),
     text = document.getElementById('text'),
     send = document.getElementById('send'),
-    login = document.getElementById('login');
+    login = document.getElementById('login'),
+    menuToggleButton = document.getElementById('menuToggleButton');
 
-
+    var skyCrypt = new SkyExpressEncryption('test', 'hello');
+    console.log(skyCrypt.RetrieveEncryptedItem());
 
     //send email function has been tested and worked using my personal Outlook emails. 
  SendEmail = function(){
@@ -43,5 +46,18 @@ transporter.sendMail(mailOptions, function(error, info){
 });
 
  }
+
+ DeployMenu = function(){
+     var sideMenu = document.getElementById('sideMenu');
+     let state = sideMenu.getAttribute('data-state');
+    if(state === 'closed'){
+        sideMenu.setAttribute('data-state', 'open');
+        sideMenu.style.left = '0';
+     } else {
+         sideMenu.setAttribute('data-state', 'closed');
+         sideMenu.style.left = '-200px';
+     }
+ }
 //login.addEventListener('click', transporter.createTransport);
-send.addEventListener('click', SendEmail);
+//send.addEventListener('click', SendEmail);
+menuToggleButton.addEventListener('click', DeployMenu);
