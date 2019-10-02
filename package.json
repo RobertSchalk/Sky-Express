@@ -21,12 +21,17 @@
   },
   "homepage": "https://github.com/RobertSchalk/Sky-Express#readme",
   "dependencies": {
+    "bcrypt": "^3.0.6",
     "electron": "^6.0.9",
     "electron-window-state": "^5.0.3",
     "fs": "0.0.1-security",
-    "node": "^12.10.0",
+    "node": "^12.11.0",
+    "node-gyp": "^5.0.4",
+    "node-pre-gyp": "^0.13.0",
     "nodemailer": "^6.3.0",
+    "openssl": "^1.1.0",
     "path": "^0.12.7",
+    "python": "0.0.4",
     "store.js": "^1.0.4"
   }
 }
