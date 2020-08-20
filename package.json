@@ -21,7 +21,7 @@
   },
   "homepage": "https://github.com/RobertSchalk/Sky-Express#readme",
   "dependencies": {
-    "bcrypt": "^3.0.6",
+    "bcrypt": "^5.0.0",
     "electron": "^6.0.9",
     "electron-window-state": "^5.0.3",
     "fs": "0.0.1-security",
